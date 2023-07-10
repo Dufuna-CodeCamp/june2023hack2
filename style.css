@@ -1,0 +1,178 @@
+/* CSS styles for the index and other pages */
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .flex-right {
+    float: right;
+    text-align: right;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .form-group input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .form-group input[type="submit"]:hover {
+    background-color: grey;
+  }
+
+  button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+ header ul {
+    list-style: none;
+    display: flex;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .intro-container {
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    justify-content: center;
+    font-size: large;
+    align-items: center;
+    margin-left: 100px;
+  }
+
+  .grid-item {
+    display: flex;
+    justify-content: center;
+  } 
+  
+  header ul {
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+ .header-image {
+    width: 380px;
+    height: 260px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .flex-header {
+    display: flex;
+    padding: 20px;
+  }
+
+  .logo {
+    height: 40px;
+    display: inline;
+  }
+
+  .blue {
+    color: blue;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .choose-us {
+    display: inline-grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 10px;
+    width: 90%;
+    margin-left: 20px;
+  }
+
+  .choose-us li {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+
+  hr {
+    border: 1px solid black;
+    width: 90%;
+    text-align: center;
+  }
+
+  footer {
+    background-color: grey;
+  }
+
+  footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .footer-links a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-signup {
+    margin-top: 20px;
+  }
+  
+  .footer-signup h3 {
+    font-size: 18px;
+  }
+  
+  /* .footer-signup form {
+    margin-top: 10px;
+  } */
+  
+  .footer-signup input[type="email"] {
+    padding: 5px;
+    width: 200px;
+  }
+  
+  .footer-signup button {
+    padding: 5px 15px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+    
+  .footer-container {
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 30px;
+    row-gap: 10px;
+  }
