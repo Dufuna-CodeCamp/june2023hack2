@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
-<body>
+<body class="image">
     <div class="container">
-        <h2>AutoParts</h2>
+      <button class="btn btn-primary rounded-2">AutoParts</button>
+        <h2>You are welcome!</h2>
         <form id="signin-form" style="display: block;">
           <div class="form-group">
             <label for="email">Email:</label>
@@ -23,7 +24,7 @@
           </div>
           <div id="error-message" class="error"></div>
           <div class="switch-link">
-            <a href="#" onclick="toggleForm('signup-form')">Don't have an account? Sign up</a>
+            <a href="#" onclick="toggleForm('signup-form')" class="black-text">Don't have an account? Sign up</a>
           </div>
         </form>
     
@@ -48,7 +49,7 @@
             <input type="submit" value="Sign Up">
           </div>
           <div class="switch-link">
-            <a href="#" onclick="toggleForm('signin-form')">Already have an account? Sign in</a>
+            <a href="#" onclick="toggleForm('signin-form')" class="black-text">Already have an account? Sign in</a>
           </div>
         </form>
         <div id="error-message" class="error"></div>

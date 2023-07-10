@@ -12,10 +12,14 @@ body {
   .form-group {
     margin-bottom: 20px;
   }
+  .switch-link {
+    color: black !important;
+  }
 
   .flex-right {
     float: right;
     text-align: right;
+    align-items: center;
   }
   .form-group label {
     display: block;
@@ -121,6 +125,7 @@ body {
   .choose-us li {
     border: 1px solid black;
     border-radius: 10px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
     padding-left: 10px;
   }
 
@@ -176,3 +181,71 @@ body {
     column-gap: 30px;
     row-gap: 10px;
   }
+
+/* Footer Styling */
+.text-small {
+  font-size: 0.9rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.form-control {
+  background: #212529;
+  border-color: #545454;
+}
+
+.form-control:focus {
+  background: #212529;
+}
+
+footer {
+  background: #212529;
+}
+
+.gray {
+  color: gray;
+}
+
+.hr-custom-color{
+  border-color: #ccc;
+  width: 100%;
+}
+.input-style {
+  background-color: #212529 !important;
+}
+
+.custom-button {
+  border-color: white !important;
+  border-style: double !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.force-text-right {
+  text-align: right !important;
+  display: inline;
+  float: right;
+}
+
+/* style for login/sign-up page */
+
+.black-text {
+  color: white!important;
+}
+
+.image {
+  background-image: url('/images/types_of_auto_parts.jpg');
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
