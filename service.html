@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>AutoParts Shop</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pad">
+        <a class="navbar-brand" href="index.html"><button class="btn btn-primary rounded-2">AutoParts</button></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link current" href="service.html">Service</a>
+            </li>
+          </ul>
+        </div>
+        
+        <a href="login.html"><button class="btn btn-primary rounded-4">Login</button></a>
+      </nav>
+      <br>
+
+      <h3 class="text-center">Car Information & Fault Questionnaire</h3>
+      <div class="container col-6">
+        <h6>Please provide the following information about your car and answer the following questions so we can recommend suggested parts for you to resolve the issue</h6>
+        <form id="signup-form" onsubmit="validateForm(event)">
+          <div class="form-group">
+            <label for="text">Name of your car:</label>
+            <input type="text" id="car_name" name="text" required>
+          </div>
+          <div class="form-group">
+            <label for="text">Year of production of your car:</label>
+            <input type="text" id="car_year" name="text" required>
+          </div>
+          <div class="form-group">
+            <label for="text">Producer of your car:</label>
+            <input type="text" id="car_producer" name="text" required>
+          </div>
+          <div class="form-group">
+            <label for="text">Vehicle Identification Number:</label>
+            <input type="text" id="car_VIN" name="text" required>
+          </div>
+            
+          
+
+          <div class="form-group">
+            <label for="fault_category">Choose a fault category:</label>
+            <select name="fault_category" id="cars">
+                <option value="Ignition">Ignition</option>
+                <option value="Engine">Engine</option>
+                <option value="Tyres">Tyres</option>
+                <option value="Electrical">Electrical</option>
+            </select>
+              
+            <div class="form-group">
+                <label for="servicing">When last did you service your car?:</label>
+                <select name="servicing" id="cars">
+                    <option value="A_year">A year</option>
+                    <option value="6_months">6 months</option>
+                    <option value="less_than_6_months">Less than 6 months</option>
+                    <option value="Greater_than_a_year">Greater than a year</option>
+                </select> <br> <br>
+            <div class="form-group">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+
+        <section>
+            <h4 class="text-center">Recommended Parts</h4>
+            <div>
+                <ul class="cart-items">
+                    <li>
+                        <img src="images/door.jpg" alt="Door">
+                        <h6 class="product-name">Door</h6>
+                        <h6 class="product-price">₦ 10000 </h6>
+                        <div><a href="#"><button class="cart btn btn-primary">Add to Cart</button></a></p></div>
+                    </li>
+
+                    <li>
+                        <img src="images/engine_oil.jpeg" alt="engine_oil">
+                        <h6 class="product-name">Engine Oil</h6>
+                        <h6 class="product-price">₦ 3600</h6>
+                        <div><a href="#"><button class="cart btn btn-primary">Add to Cart</button></a></p></div>
+                    </li>
+
+                    <li>
+                        <img src="images/car_seat.jpg" alt="Car Seat">
+                        <h6 class="product-name">Car Seat</h6>
+                        <h6 class="product-price">₦ 5500</h6>
+                        <div><a href="#"><button class="cart btn btn-primary">Add to Cart</button></a></p></div>
+                    </li>
+
+                    <li>
+                        <img src="images/tyre.png" alt="Tyre">
+                        <h6 class="product-name">Tyre</h6>
+                        <h6 class="product-price">₦ 11000</h6>
+                        <div><a href="#"><button class="cart btn btn-primary">Add to Cart</button></a></p></div>
+                    </li>
+                    <li>
+                        <img src="images/steering.jpeg" alt="steering">
+                        <h6 class="product-name">Steering</h6>
+                        <h6 class="product-price">₦ 6000</h6>
+                        <div><a href="#"><button class="cart btn btn-primary">Add to Cart</button></a></p></div>
+                    </li>
+
+                    <li>
+                        <img src="images/rear_bumper.jpg" alt="Rear bumper">
+                        <h6 class="product-name">Rear Bumper</h6>
+                        <h6 class="product-price">₦ 8000</h6>
+                        <div><a href="#"><button class="cart btn btn-primary">Add to Cart</button></a></p></div>
+                    </li>
+
+                    <li>
+                        <img src="images/headlight.png" alt="Headlight">
+                        <h6 class="product-name">Headlight</h6>
+                        <h6 class="product-price">₦ 7000</h6>
+                        <div><a href="#"><button class="cart btn btn-primary">Add to Cart</button></a></p></div>
+                    </li>
+
+                    <li>
+                        <img src="images/car_bumper.jpg" alt="car bumber">
+                        <h6 class="product-name">car Bumper</h6>
+                        <h6 class="product-price">₦ 4900</h6>
+                        <div><a href="#"><button class="cart btn btn-primary">Add to Cart</button></a></p></div>
+                    </li>
+                </ul>
+        </section>
+  
+        <footer class="w-100 py-4 flex-shrink-0">
+            <div class="container py-4">
+                <div class="row gy-4 gx-5">
+                    <div class="col-lg-12 col-md-6 text-lg-center">
+                        <h5 class="text-white mb-3">Sign up to get 30% off</h5>
+                        <p class="small gray">Get regular updates about our new arrivals, discounts and offers.</p>
+                        <form action="#">
+                            <div class="mb-3">
+                                <input class="form-control border-0 border-bottom input-style rounded-0 text-white justify-content-center input-width" type="text" placeholder="Email" aria-label="Email">
+                                <br>
+                                <button class="btn btn-light text-dark rounded-0" type="button">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr class="hr-custom-color">
+                <button class="btn btn-dark text-white rounded-0 custom-button">Autoparts</button>
+                <p class="text-white force-text-right"> Copyright &copy; 2023 Autoparts. All rights reserved </p>
+            </div>
+        </footer>
+
+    <style>
+
+        nav{
+            border-bottom: 0.1px solid gray;
+            box-shadow: 0 0.1px 5px black;
+        }
+        a {
+            color: black !important;
+        }
+        .pad {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .current {
+            color:#0E4C92 !important;
+        }
+
+    .cart-items {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        text-align: center;
+    }
+    select {
+        width: 100%;
+        height: 35px;
+        border-radius: 4px;
+    }
+    
+    img {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    </style>
+</body>
+</html>
