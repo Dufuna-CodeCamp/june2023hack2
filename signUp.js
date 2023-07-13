@@ -1,3 +1,4 @@
+
 // JavaScript for form validation
 function validateForm(event) {
     event.preventDefault(); // Prevent form submission
@@ -34,3 +35,49 @@ function validateForm(event) {
       signupForm.style.display = "block";
     }
   }
+
+
+  // Billing section
+
+var payButton = document.querySelector(".payment");
+
+var selectAddToCart = document.querySelectorAll(".cart");
+var checkout = document.getElementById('checkout');
+
+selectAddToCart.forEach(function (element, index) {
+  element.addEventListener('click', function () {
+    var elementExists = selectAddToCart[index].querySelector('p') !== null;
+
+    if (elementExists) {
+      alert("Item already added to cart proceeding to checkout")
+    } else {
+      newParagraph = document.createElement('p');
+    
+      var linkElement = document.createElement('a');
+      linkElement.href = 'billing.html';
+    
+      var addToCartText = document.createTextNode('Click here to checkout');
+    
+      linkElement.appendChild(addToCartText);
+      newParagraph.appendChild(linkElement);
+    
+      selectAddToCart[index].appendChild(newParagraph);
+
+      var checkoutBtn = document.getElementById('checkout');
+      // Add a click event listener to the button
+      checkoutBtn.addEventListener('click', function() {
+      // Redirect to billing page
+      if (!elementExists){
+        window.location.href = 'billing.html';
+      } else {
+        alert("add items to cart first")
+      }}); 
+
+    }
+  });
+});
+
+payButton.addEventListener('click',() => {
+ 
+  alert("Thank you for making a purchase!");
+});
