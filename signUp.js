@@ -71,13 +71,11 @@ selectAddToCart.forEach(function (element, index) {
         window.location.href = 'billing.html';
       } else {
         alert("add items to cart first")
-      }}); 
-
+      }});
     }
   });
 });
 
 payButton.addEventListener('click',() => {
- 
   alert("Thank you for making a purchase!");
 });
